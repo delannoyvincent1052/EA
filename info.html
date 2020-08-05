@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+	<title>infobulle</title>
+	<meta charset="utf-8">
+	 
+	<style type="text/css">
+	* {
+	   font-size: 11px; /* On définit les propriétés de texte pour toutes les balises. */
+	   font-family: Tahoma, Verdana, Arial, serif;
+	}
+	a.info {
+	   position: relative;
+	   color: black;
+	   text-decoration: none;
+	   border-bottom: 1px gray dotted; /* On souligne le texte. */
+	}
+	a.info div {
+	   display: none; /* On masque l'infobulle. */
+		
+	}
+	a.info:hover {
+	   background: none; /* Correction d'un bug d'Internet Explorer. */
+	   z-index: 500; /* On définit une valeur pour l'ordre d'affichage. */
+	 
+	   /* cursor: help;  On change le curseur par défaut par un curseur d'aide. */
+	}
+	a.info:hover div {
+	   display: inline; /* On affiche l'infobulle. */
+	   position: absolute;
+	 
+		white-space: nowrap; /* On change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non désiré. */
+	 
+	   top: 30px; /* On positionne notre infobulle. */
+	   left: 20px;
+	 
+	   background: white;
+	 
+	   color: green;
+	   padding: 3px;
+	 
+	   border: 1px solid green;
+	   border-left: 4px solid green;
+	}
+	</style>
+</head>
+ 
+<body>
+<div>Grâce au <a href="#" class="info"><input type="text" name="test"><div>contraction de Wireless Fidelity<br>2ème ligne</div></a>, il est possible de créer des réseaux locaux sans fil à haut débit pour peu que la station à connecter ne soit pas trop distante par rapport au point d'accès.
+</div>
+</body>
+ 
+</html>

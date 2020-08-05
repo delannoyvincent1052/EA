@@ -1,0 +1,66 @@
+	
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login E-Artisan</title>
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<br>
+	<center><table>
+		<tr><td colspan="2" class="TDLogin"><center><img src="img/logoiart-mini.png" class="LogoLogin" /></center></td></tr>
+		<tr><td colspan="2" class="TDLogin"><center><h3>Votre inscription n\'est pas encore validée, veuillez entrer votre email pour recevoir à nouveau un email de validation</h3></center></td></tr>
+		<form id="AccountValidation">
+			<tr><td class="InputLoginTitle">Email : </td><td class="InputLoginTitle"><input type="email" placeholder="Email" name="email" class="InputLogin"></td></tr>
+			<tr><td colspan="2" class="TDLogin"><center><input type="submit" value="Valider mon compte"></center></td></tr>
+		</form>
+		<tr><td colspan="2" class="TDLogin"><center><div id="RequestPasswordResult"></div></center></td></tr>
+
+	</table></center><br>
+	<center><a href="http://eartisan/Login.html">Connexion</a></center>
+
+<p><div id="result"></div></p>
+
+<script>
+	
+	document.getElementById("AccountValidation").addEventListener("submit", function(e) {
+	e.preventDefault();
+
+	var data = new FormData(this);
+
+	var xhr = new XMLHttpRequest();
+
+	xhr.onreadystatechange = function() {
+	
+	console.log(this);
+	if (this.readyState == 4 && this.status == 200) {
+		var res = this.response;
+		
+		alert(res.Success);
+		if (res.Success==0) {
+			document.getElementById("RequestPasswordResult").innerHTML = "Une erreur est survenue. Veuillez recommencer.";
+			//document.location.href="Login.html"
+		} 
+		if (res.Success==1) {
+			document.getElementById("RequestPasswordResult").innerHTML = "Un email de validation vous a été transmis";
+			//document.location.href="Login.html"
+		} 
+			 
+	} else if (this.readyState == 4) {
+			alert("Une erreur est survenue...");
+		}
+//	};
+	}
+
+	xhr.open("POST", "/async/AccountValidation.php", true);
+	xhr.responseType = "json";
+	//xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xhr.send(data);
+
+	return false;
+});
+
+</script>
+</body>
+</html>​

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login E-Artisan</title>
+	<link href="css/style2.css" type="text/css" rel="stylesheet">
+	<script type = "text/javascript" src = "/js/main.js" ></script>
+	<script type = "text/javascript" src = "/js/VisitorHome.js" ></script>
+</head>
+<body  onload="InitializeFields()">
+
+	<div id="conteneur">
+		<h1 id="header" style="text-align: right"><a href="Home.html" title="I-Artisan - Accueil"><span>Accueil</span></a>
+			<div id="TableLogin">
+				<table>
+						<tr>
+							<td colspan="2"><center><img src="img/logoiart-60p.png" class="LogoLogin"  /></center></td>
+						</tr>
+						<tr>
+							<td><h3>Login : </h3></td><td><input type="email" placeholder="Email" name="email" class="InputLogin" id="EmailLogin"></td>
+						</tr>
+						<tr>
+							<td>Mot de passe : </td><td><input type="password" placeholder="Mot de passe" name="mdp" id="MdPLogin" class="InputLogin"></td>
+						</tr>
+						<tr>
+							<td colspan="2"><center><input type="button" value="Connexion" onclick="LoginWorker()"></center></td>
+						</tr>
+						<br>
+						<tr>
+							<td colspan="2"><center><a href="NewWorker.html">Pas encore de compte ?</a></center></td>
+						</tr>
+						<tr>
+							<td colspan="2"><center><a href="IForgot.html">Mot de passe oublié ?</a></center></td>
+						</tr>
+				</table>
+			</div>
+		</h1>
+	
+
+	<div id="contenu">
+      <h2>Recherche d'artisan</h2>
+      <p>
+      	
+      	<center><table>
+	
+	<tr>
+		<td colspan="2">
+			<table id="StandardForm">
+				
+				<tr>
+					<td>
+						<h4 style='text-align: right'>Département :</h4>
+					</td>
+					<td><div id="SelectDepartment" style='text-align: left'>
+						<select id="SelectedDepartment" onchange="GetCityList();">
+
+							<option value="01">1 - Ain</option>
+							<option value="02">2 - Aisne</option>
+							<option value="03">3 - Allier</option>
+							<option value="04">4 - Alpes de Haute-Provence</option>
+							<option value="05">5 - Hautes-Alpes</option>
+							<option value="06">6 - Alpes-Maritimes</option>
+							<option value="07">7 - Ardèche</option>
+							<option value="08">8 - Ardennes</option>
+							<option value="09">9 - Ariège</option>
+							<option value="54">54 - Meuse</option>
+							<option value="78">78 - Yvelines</option>
+
+						</select></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h4 style='text-align: right'>Ville :</h4>
+					</td>
+					<td>
+						<div id="SelectCity" style='text-align: left'>
+						<select id="SelectedCity">
+
+							<div id="CityList"></div>
+							
+						</select></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h4 style='text-align: right'>Spécialité :</h4>
+					</td>
+					<td>
+						<div id="SelectWorkerActivity" style='text-align: left'>
+						<select id="SelectedWorkerActivity">
+
+							<div id="WorkerActivityList"></div>
+							
+						</select></div>
+					</td>
+				</tr>
+				<tr>
+					<td><br></td>
+					<td>
+						<input type="button" value="Rechercher" onclick="HomeSearch()">
+					</td>
+					
+				</tr>
+				
+			</table>
+		
+			<table width="400">
+				<tr>
+					<td>
+						<center><p>Localisation :</p></center>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table></center>
+
+	<h4 style='text-align: center'>Résultat :</h4>
+				
+      </p>
+    </div>
+
+    <p id="footer">Réalisation : V. Delannoy - RCS 1234567890 - Email : delannoyvincent@free.fr</p>
+
+    </div>
+
+
+
+</body>
+</html>​

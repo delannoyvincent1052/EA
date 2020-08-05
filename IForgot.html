@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Compte oublié</title>
+	<link href="css/style2.css" type="text/css" rel="stylesheet">
+	<script type = "text/javascript" src = "/js/main.js" ></script>
+</head>
+<body>
+
+	<div id="conteneur">
+		<h1 id="header" style="text-align: right"><a href="Home.html" title="I-Artisan - Accueil"><span>Accueil</span></a>
+			<div id="TableLogin">
+				<table>
+						<tr>
+							<td colspan="2"><center><img src="img/logoiart-60p.png" class="LogoLogin"  /></center></td>
+						</tr>
+						<tr>
+							<td><h3>Login : </h3></td><td><input type="email" placeholder="Email" name="email" class="InputLogin" id="EmailLogin"></td>
+						</tr>
+						<tr>
+							<td>Mot de passe : </td><td><input type="password" placeholder="Mot de passe" name="mdp" id="MdPLogin" class="InputLogin"></td>
+						</tr>
+						<tr>
+							<td colspan="2"><center><input type="button" value="Connexion" onclick="LoginWorker()"></center></td>
+						</tr>
+						<br>
+						<tr>
+							<td colspan="2"><center><a href="NewWorker.html">Pas encore de compte ?</a></center></td>
+						</tr>
+						<tr>
+							<td colspan="2"><center><a href="IForgot.html">Mot de passe oublié ?</a></center></td>
+						</tr>
+				</table>
+			</div>
+		</h1>
+	
+
+	<div id="contenu">
+      <h2>Récupération du mot de passe I-Artisan</h2>
+      <p>
+      	
+      	<center><table>
+			<br><br><br>
+      		<tr>
+      			<td>Entrez votre email pour recevoir votre mot de passe</td>
+      		</tr>
+			<tr>
+				<td style="text-align:center"><input type="email" id="email" placeholder="Email" name="email" class="InputLogin"></td>
+			</tr>
+			<tr>
+				<td><center><input type="button" value="Recevoir mon mot de passe" onclick="IForgot()"></center></td>
+			</tr>
+			<br><br>
+			<tr>
+				<td><center><p><div id="result"></div></p></center></td>
+			</tr>
+
+		</table></center>
+
+      </p>
+    </div>
+
+    <p id="footer">Réalisation : V. Delannoy - RCS 1234567890 - Email : delannoyvincent@free.fr</p>
+
+    </div>
+
+</body>
+</html>​

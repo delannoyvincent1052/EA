@@ -1,0 +1,237 @@
+body
+{
+	margin: 0px 0 ;
+	padding: 0 ;
+	text-align: center ;
+	font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
+	background: #dea ;
+}
+
+div#conteneur
+{
+	width: 770px ;
+	margin: 0 auto ;
+	text-align: left ;
+	border: 2px solid #9b4 ;
+	background: #fff ;
+}
+
+h1#header
+{
+  height: 329px;
+	background: url(Main-picture.png) no-repeat left top;
+}
+
+h3#header
+{
+  height: 10px;
+	background: url(Main-picture.png) no-repeat left top;
+}
+
+ul#menu
+{
+	height: 35px ;
+	margin: 0 ;
+	padding: 0 ;
+	background: url(img/bg_menu.gif) repeat-x 0 -25px ;
+	list-style-type: none ;
+}
+
+ul#menu li
+{
+	float: left ;
+	text-align: center ;
+}
+
+ul#menu li a
+{
+	width: 130px ;
+	line-height: 25px ;
+	font-size: 1.2em ;
+	font-weight: bold ;
+	letter-spacing: 2px ;
+	color: #9b4;
+	display: block ;
+	text-decoration: none ;
+	border-right: 2px solid #dea ;
+}
+
+ul#menu li a:hover
+{
+	background: url(img/bg_menu.gif) repeat-x 0 0 ;
+	color: #000;
+}
+
+
+pre
+{
+  overflow: auto ;
+}
+
+<!--[if IE]>
+<style type="text/css">
+html pre
+{
+  width: 636px ;
+}
+</style>
+<![endif]-->
+
+div#contenu
+{
+	padding: 0 30px 0 100px ;
+	background: url(bg_page.gif) no-repeat 15px 15px ;
+}
+
+div#contenu h2
+{
+	padding-left: 25px ;
+	line-height: 25px ;
+	font-size: 1.4em ;
+	background: url(Miniscie.png) no-repeat left bottom ;
+	color: #9b2 ;
+	border-bottom: 1px solid #9b2 ;
+}
+
+div#contenu h3
+{
+	margin-left: 15px ;
+	padding-left: 5px ;
+	border-bottom: 1px solid #9b2 ;
+	border-left: 3px solid #9b2 ;
+	color: #9b2 ;
+}
+
+div#contenu h4
+{
+	font: 2em "Trebuchet MS", helvetica, sans-serif ;
+}
+
+div#contenu p
+{
+	text-align: justify ;
+	text-indent: 2em ;
+	line-height: 1.7em ;
+}
+
+div#contenu a
+{
+	color: #8a0 ;
+}
+
+div#contenu a:hover
+{
+	color: #9b2;
+}
+
+p#footer
+{
+	margin: 0 ;
+	padding-right: 10px ;
+	line-height: 30px ;
+	text-align: right ;
+	color: #8a0 ;
+}
+
+pre
+{
+	overflow: auto ;
+	background: #dea ;
+	border: 2px solid #9b2 ;
+	padding: 5px 0 0 5px ;
+	font-size: 1.2em ;
+}
+
+pre span
+{
+	color: #560 ;
+}
+
+pre span.comment
+{
+	color: #b30000 ;
+}
+
+div#TableLogin table
+{
+	margin-left:430px;
+	font-size: 0.5em ;
+}
+
+* {
+   font-size: 11px; /* On définit les propriétés de texte pour toutes les balises. */
+   font-family: Tahoma, Verdana, Arial, serif;
+}
+a.info {
+   position: relative;
+   color: black;
+   text-decoration: none;
+   border-bottom: 1px gray dotted; /* On souligne le texte. */
+}
+a.info div {
+   display: none; /* On masque l'infobulle. */
+    
+}
+a.info:hover {
+   background: none; /* Correction d'un bug d'Internet Explorer. */
+   z-index: 500; /* On définit une valeur pour l'ordre d'affichage. */
+ 
+   /* cursor: help;  On change le curseur par défaut par un curseur d'aide. */
+}
+a.info:hover div {
+   display: inline; /* On affiche l'infobulle. */
+   position: absolute;
+ 
+    white-space: nowrap; /* On change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non désiré. */
+ 
+   top: 30px; /* On positionne notre infobulle. */
+   left: 20px;
+ 
+   background: green;
+ 
+   color: white;
+   padding: 3px;
+ 
+   border: 1px solid green;
+   border-left: 4px solid green;
+}
+
+div#contenu table {
+border:0px solid #9b2;
+/*border-collapse:collapse;*/
+width:90%;
+margin:auto;
+}
+
+div#contenu thead, tfoot {
+background-color:#D0E3FA;
+background-image:url(sky.jpg);
+border:0px solid #9b2;
+}
+div#contenu tbody {
+background-color:#FFFFFF;
+border:1px solid #9b2;
+}
+div#contenu th {
+font-family:monospace;
+border:0px dotted #9b2;
+padding:5px;
+background-color:#dea;
+width:25%;
+}
+div#contenu td {
+font-family:sans-serif;
+font-size:80%;
+border:0px solid #9b2;
+padding:5px;
+text-align:left;
+}
+div#contenu caption {
+font-family:sans-serif;
+}
+
+div#StandardForm table{
+
+	border:0px solid #FFFFF;
+}
+

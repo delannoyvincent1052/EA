@@ -1,0 +1,21 @@
+<?php
+
+if ($UserSession!=session_id())
+	{
+			header("Location: /Login.html");
+	}
+
+	try {
+
+    	$base = new PDO('mysql:host=localhost; dbname=eartisan', 'root', '');
+
+  	}
+
+
+  	catch(exception $e) {
+
+    	die('Erreur '.$e->getMessage());
+
+  	}
+
+ ?>

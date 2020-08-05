@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Creation de compte E-Artisan</title>
+	<link href="css/style2.css" type="text/css" rel="stylesheet">
+	<script type = "text/javascript" src = "/js/main.js" ></script>
+	<script type = "text/javascript" src = "/js/newworker.js" ></script>
+	
+</head>
+<body onload="InitializeFields()">
+
+	<div id="conteneur">
+		<h1 id="header" style="text-align: right"><a href="Home.html" title="I-Artisan - Accueil"><span>Accueil</span></a>
+			<div id="TableLogin">
+				<table>
+						<tr>
+							<td colspan="2"><center><img src="img/logoiart-60p.png" class="LogoLogin"  /></center></td>
+						</tr>
+						<tr>
+							<td><h3>Login : </h3></td><td><input type="email" placeholder="Email" name="email" class="InputLogin" id="EmailLogin"></td>
+						</tr>
+						<tr>
+							<td>Mot de passe : </td><td><input type="password" placeholder="Mot de passe" name="mdp" id="MdPLogin" class="InputLogin"></td>
+						</tr>
+						<tr>
+							<td colspan="2"><center><input type="button" value="Connexion" onclick="LoginWorker()"></center></td>
+						</tr>
+						<br>
+						<tr>
+							<td colspan="2"><center><a href="NewWorker.html">Pas encore de compte ?</a></center></td>
+						</tr>
+						<tr>
+							<td colspan="2"><center><a href="IForgot.html">Mot de passe oublié ?</a></center></td>
+						</tr>
+				</table>
+			</div>
+		</h1>
+	
+
+	<div id="contenu">
+      <h2>Création de compte I-Artisan</h2>
+      <p>
+      	
+      	<center><table class="TableLogin">
+		
+		<tr><td class="TDLogin" colspan="3"><center><h1>Création de compte I-Art</h1></center></td></tr>
+
+			<tr><td style="text-align: right">Prénom : </td><td class="InputLoginTitle" style="text-align:left"><a href="#" class="info"><input type="text" placeholder="Prenom" name="FirstName" id="FirstName" class="InputLogin"><div>Seuls sont acceptés les caractères Majuscules, minuscules, accentués et le tiret<br>Ce champ est obligatoire</div></a></td><td><div id="FirstNameError"></div></td></tr>
+
+			<tr><td style="text-align: right">Nom : </td><td class="InputLoginTitle" style="text-align:left"><a href="#" class="info"><input type="text" placeholder="Nom" name="LastName" id="LastName" class="InputLogin"><div>Seuls sont acceptés les caractères Majuscules, minuscules, accentués et le tiret<br>Ce champ est obligatoire</div></a></td><td><div id="LastNameError"></div></td></tr>
+
+			<tr><td style="text-align: right">Entreprise : </td><td class="InputLoginTitle" style="text-align:left"><a href="#" class="info"><input type="text" placeholder="Nom de l'Entreprise" name="CompanyName" id="CompanyName" class="InputLogin"><div>Seuls sont acceptés les caractères Majuscules, minuscules, accentués et le tiret<br>Ce champ est obligatoire</div></a></td><td><div id="CompanyNameError"></div></td></tr>
+
+			<tr><td style="text-align: right">Raison Sociale : </td><td class="InputLoginTitle" style="text-align:left">
+
+				<select id="SocialName" style="width: 200px; min-width: 200px; max-width: 200px;">
+
+					<option value="Auto-Entreprise">Auto-Entreprise</option>
+					<option value="EURL">EURL</option>
+					<option value="SARL">SARL</option>
+					
+				</select></div>
+
+
+
+			</td><td></td></tr>
+			<tr><td style="text-align: right" style="width: 200px">Numéro RCS : </td><td class="InputLoginTitle" style="text-align:left"><input type="text" placeholder="Numéro RCS" name="RCSNumber" id="RCSNumber" class="InputLogin"></td><td><div id="RCSNumberError"></div></td></tr>
+
+			<tr><td style="text-align: right" style="width: 200px">Adresse1 : </td><td class="InputLoginTitle" style="text-align:left"><input type="text" placeholder="Adresse" name="Address1" id="Address1" class="InputLogin"></td><td><div id="Address1Error"></div></td></tr>
+
+			<tr><td style="text-align: right" style="width: 200px">Adresse2 : </td><td class="InputLoginTitle" style="text-align:left"><input type="text" placeholder="Complément d'adresse" name="Address2" id="Address2" class="InputLogin"></td><td><div id="Address2Error"></div></td></tr>
+
+			<tr><td style="text-align: right" style="width: 200px">Code Postal : </td><td class="InputLoginTitle" style="text-align:left"><input type="text" placeholder="Code Postal" name="CP" id="CP" class="InputLogin"></td><td><div id="CPError"></div></td></tr>
+
+			<tr><td style="text-align: right" style="width: 200px">Departement : </td><td class="InputLoginTitle" style="text-align:left">
+
+				<select id="Departement" onchange="GetCityList()" style="width: 200px; min-width: 200px; max-width: 200px;">
+
+					<div id="DepartementOption"></div>
+					
+				</select></div>
+			</td><td></td></tr>
+			<tr><td style="text-align: right" style="width: 200px">Ville : </td><td class="InputLoginTitle" style="text-align:left">
+
+				<select id="City"  onchange="GetCityCP()" style="width: 200px; min-width: 200px; max-width: 200px;">
+
+					<div id="CityOption"></div>
+					
+				</select></div>
+			</td><td><div id="CityError"></div></td></tr>
+			
+
+			<tr><td style="text-align: right" style="width: 200px">Téléphone 1 : </td><td class="InputLoginTitle" style="text-align:left"><input type="text" placeholder="Téléphone" name="Tel1" id="Tel1" class="InputLogin"></td><td><div id="Tel1Error"></div></td></tr>
+
+			<tr><td style="text-align: right" style="width: 200px">Téléphone 2 : </td><td class="InputLoginTitle" style="text-align:left"><input type="text" placeholder="Téléphone" name="Tel2" id="Tel2" class="InputLogin"></td><td><div id="Tel2Error"></div></td></tr>
+
+			<tr><td style="text-align: right" style="width: 200px">Email : </td><td class="InputLoginTitle" style="text-align:left"><input type="email" placeholder="Email" name="Email" id="Email" class="InputLogin"></td><td><div id="EmailError"></div></td></tr>
+
+			<tr><td class="TDLogin" colspan="3"><center><input type="button" value="Inscription" onclick="NewWorker()"></center></td></tr>
+			<tr><td colspan="3"><div id="AccountCreationResult"></div></td></tr>
+		
+	</table></center>
+
+      </p>
+    </div>
+
+    <p id="footer">Réalisation : V. Delannoy - RCS 1234567890 - Email : delannoyvincent@free.fr</p>
+
+    </div>
+
+	
+
+	
+
+</body>
+</html>​

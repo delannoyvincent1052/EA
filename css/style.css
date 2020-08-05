@@ -1,0 +1,375 @@
+body
+{
+  margin: 10px 0 ;
+  padding: 0 ;
+  text-align: center ;
+}
+
+div#conteneur
+{
+  width: 770px ;
+  margin: 0 auto ;
+  text-align: left ;
+}
+
+h1#header
+{
+  height: 258px ;
+}
+
+h4.ko{
+    color:#ff0000;
+    font-style: italic;
+}
+
+h4.ok{
+    color:#00ff00;
+    font-style: italic;
+}
+
+
+.bouton
+{
+    color:#0000ff;
+    font-size:24px;
+    cursor:pointer;
+}
+.bouton:hover
+{
+    text-decoration:underline;
+}
+.texte
+{
+    border:1px solid #333333;
+    background:#eeeeee;
+    padding:10px;
+    color:#333333;
+}
+.texte:hover
+{
+    border:1px solid #000000;
+    background:#cccccc;
+    color:#000000;
+}
+
+/* Style des tables */
+
+table {
+  border-collapse: collapse;
+  border: 0px solid #fff;
+    /*-moz-box-shadow: 8px 8px 12px #aaa; 
+    -webkit-box-shadow: 8px 8px 12px #aaa; 
+    /*box-shadow: 8px 8px 12px #555; */
+}
+
+table, th, td {
+  border: 0px solid black;
+}
+
+.TableListe {
+  border-collapse: collapse;
+  border: 1px solid #fff;
+    -moz-box-shadow: 8px 8px 12px #aaa; 
+    -webkit-box-shadow: 8px 8px 12px #aaa; 
+    box-shadow: 8px 8px 12px #555;
+}
+
+.THListe{
+    border: 1px solid black;
+}
+
+.TDListe{
+    border: 1px solid black;
+}
+
+
+.TitleCell {
+    border:2px solid black; 
+    background-color:silver;
+    font-family:georgia, serif;
+    border-collapse: collapse;
+
+}
+
+.CategoryCell{
+
+    border:0px solid black; 
+    background-color:grey;
+    font-family:georgia, serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.LineNumberCell{
+
+    text-align: center;
+
+}
+
+.TableLogin{
+
+    border-collapse:collapse;
+    border-width:0px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.LogoLogin{
+
+    background-color: #ffffff;
+
+}
+
+.Customers.test {
+    background: url(styles/img/boutons/banniere.png) no-repeat;
+    }
+.Customers.test:hover {
+    background: url(styles/img/boutons/IMAGE_lors_du_survol.png) no-repeat;
+    }
+
+.TDLogin{
+    border-collapse:collapse;
+    border-width:0px;
+
+}
+
+.InputLogin{
+
+    border: 1px solid red;
+    font-weight: bold;
+    width:150px;
+    padding: 2px 2px 2px 3px;
+}
+
+.InputLoginTitle{
+
+    text-align:right;
+    width:100px;
+    border-width:0px;
+}
+
+
+.MenuCase{
+
+    border-collapse:collapse;
+    border-width:0px;
+    background-color:#ffffff;
+
+}
+
+.MenuTable{
+
+    border-collapse:collapse;
+    border-width:0px;
+    margin-left:auto;
+    margin-right:auto;
+    border: 0px solid #fff;
+    -moz-box-shadow: 0px 0px 0px #aaa; 
+    -webkit-box-shadow: 0px 0px 0px #aaa; 
+    box-shadow: 0px 0px 0px #555;  
+}
+
+.ProfileInput{
+    border-radius: 10px;
+}
+
+
+.TDProfileInput{
+
+    border-collapse: separate;
+    border-width:0px;
+
+}
+
+.TDExistingCustomerLink{
+
+    border-radius: 5px;
+    font-family:sans-serif;
+    font-size:80%;
+    padding:5px;
+    text-align:center;
+    background-color: #a5a5a5;
+    color: white;
+
+}
+
+.THExistingCustomer{
+
+    border-radius: 5px;
+    font-family:sans-serif;
+    font-size:100%;
+    /*border:2px solid #005497*/
+  
+}
+
+.CustomerInput{
+    border-radius: 10px;
+}
+
+.TDNewCustomerTitle{
+
+    border-collapse: separate;
+    border-width:0px;
+    text-align:right;
+}
+
+/* CSS Quotation */
+
+.QuotationInput{
+    border-radius: 10px;
+    width: 280px;
+}
+
+.TableQuotation{
+
+    border-collapse: separate;
+    border-width:0px;
+    margin-left:auto;
+    margin-right:auto;
+    border-spacing: 5px 15px;
+    width: 400px;
+}
+
+.TDQuotationTitle{
+
+    border-collapse: separate;
+    border-width:0px;
+    text-align:right;
+    background-color: #ffffff;
+    
+}
+
+.TDQuotationInput{
+
+    border-collapse: separate;
+    border-width:0px;
+    text-align:left;
+    background-color: #ffffff;
+    
+}
+
+.TableQuotationList{
+
+    border-collapse: separate;
+    border-width:2px;
+    border-spacing: 0px 5px;
+    background-color: #a5a5a5
+}
+
+/* Générique table grille de présentation */
+
+.Grid{
+
+    border-collapse: collapse;
+    border-width:0px;
+    margin-left:auto;
+    margin-right:auto;
+    border-spacing: 0px 0px;
+    background-color: #ffffff;
+}
+
+
+.GridTDTitle{
+
+    border-collapse: separate;
+    border-width:0px;
+    text-align:center;
+    background-color: #a5a5a5;
+
+
+}
+
+.GridTDTitle2{
+
+    text-align:center;
+    background-color: #FFFFFF;
+    
+}
+
+tr:nth-child(odd){
+  background-color:#FFFFFF;
+}
+
+tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+.GridTR{
+    background-color: #ffffff;
+}
+
+.ButtonMenu{
+
+    border: 2px solid #fff;
+    -moz-box-shadow: 8px 8px 12px #aaa; 
+    -webkit-box-shadow: 8px 8px 12px #aaa; 
+    box-shadow: 8px 8px 12px #555;  
+}
+
+.TablePrice{
+
+    border-collapse:collapse;
+    border-width:0px;
+    margin-left:auto;
+    margin-right:auto;
+    border: 0px solid #fff;
+    -moz-box-shadow: 0px 0px 0px #aaa; 
+    -webkit-box-shadow: 0px 0px 0px #aaa; 
+    box-shadow: 0px 0px 0px #555;  
+
+}
+
+.test{
+
+    border:0px solid #6495ed;
+    border-collapse:collapse;
+}
+
+.tdtest {
+font-family:sans-serif;
+font-size:80%;
+border:0px;
+}
+
+/* TEST */
+
+    * {
+       font-size: 11px; /* On définit les propriétés de texte pour toutes les balises. */
+       font-family: Tahoma, Verdana, Arial, serif;
+    }
+    a.info {
+       position: relative;
+       color: black;
+       text-decoration: none;
+       border-bottom: 1px gray dotted; /* On souligne le texte. */
+    }
+    a.info div {
+       display: none; /* On masque l'infobulle. */
+        
+    }
+    a.info:hover {
+       background: none; /* Correction d'un bug d'Internet Explorer. */
+       z-index: 500; /* On définit une valeur pour l'ordre d'affichage. */
+     
+       /* cursor: help;  On change le curseur par défaut par un curseur d'aide. */
+    }
+    a.info:hover div {
+       display: inline; /* On affiche l'infobulle. */
+       position: absolute;
+     
+        white-space: nowrap; /* On change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non désiré. */
+     
+       top: 30px; /* On positionne notre infobulle. */
+       left: 20px;
+     
+       background: white;
+     
+       color: green;
+       padding: 3px;
+     
+       border: 1px solid green;
+       border-left: 4px solid green;
+    }
+
+
+
